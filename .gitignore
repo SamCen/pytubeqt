@@ -2,5 +2,6 @@
 /testdownload
 /dist/*
 /testdownload/*
-/build
+/build/main
 /build/*
+/build/main/*
