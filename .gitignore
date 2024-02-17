@@ -1,2 +1,4 @@
 /dist
 /testdownload
+/dist/*
+/testdownload/*
