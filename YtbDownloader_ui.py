@@ -45,7 +45,7 @@ class DownloadThread(QObject):
             video = YouTube(params['url'])
             print('视频限制年龄：'+str(video.check_availability()))
             video_stream = video.streams.get_highest_resolution()
-            # title = video.title
+            # 注册进度回调函数
             video.register_on_progress_callback(self.on_progress)
             # 获取当前工作目录并在其中保存视频
             downloadPath = os.path.abspath(params['path'])
